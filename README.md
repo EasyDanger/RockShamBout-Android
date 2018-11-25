@@ -4,7 +4,7 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 ### Features
 -One opponent, named Danny. Danny functions based on a complex algorithm that deduces the best possible move before discarding that information and instead playing randomly.<br>
 -Score counter. Keeps track of wins, losses, and draws.<br>
--Exciting RockPaperScissors gameplay!
+-Exciting RockPaperScissors gameplay!<br>
 -Play tracker, to keep track of how many of each play you the player tends to use.<br>
 
 ### Planned Features
