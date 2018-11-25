@@ -98,4 +98,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playerPlayText" />
 
+    <TextView
+        android:id="@+id/rocRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Rock 0 times."
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/papPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockPlayButt" />
+
+    <TextView
+        android:id="@+id/papRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Paper 0 times."
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sciPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/papPlayButt" />
+
+    <TextView
+        android:id="@+id/sciRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Scissors 0 times."
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciPlayButt" />
+
 </android.support.constraint.ConstraintLayout>

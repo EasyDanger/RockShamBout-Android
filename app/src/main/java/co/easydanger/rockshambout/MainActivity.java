@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +20,13 @@ public class MainActivity extends AppCompatActivity {
     static int d = 0;
     static int w = 0;
     static int l = 0;
-    // static Roshambo youThrow = Roshambo.ROCK;
+    static int rockCount = 0;
+    static int sciCount = 0;
+    static int papCount = 0;
+    private TextView rocRecText;
+    private TextView papRecText;
+    private TextView sciRecText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         playerPlay = findViewById(R.id.playerPlayText);
         oppPlay = findViewById(R.id.oppPlayText);
         result = findViewById(R.id.resultText);
+        rocRecText = findViewById(R.id.rocRec);
+        papRecText = findViewById(R.id.papRec);
+        sciRecText = findViewById(R.id.sciRec);
+
 
 
         View.OnClickListener listenRock = new View.OnClickListener() {
@@ -47,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 dannyThrow = Danny.generateRoshambo();
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText("Danny played " + dannyThrow + ".");
+                rockCount++;
+                rocRecText.setText("You've played Rock " + rockCount + " times.");
+
 
                 if (dannyThrow == youThrow) {
                     d++;
@@ -78,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 dannyThrow = Danny.generateRoshambo();
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText("Danny played " + dannyThrow + ".");
+                papCount++;
+                papRecText.setText("You've played Paper " + papCount + " times.");
 
                 if (dannyThrow == youThrow) {
                     d++;
@@ -108,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
                 dannyThrow = Danny.generateRoshambo();
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText("Danny played " + dannyThrow + ".");
+                sciCount++;
+                sciRecText.setText("You've played Scissors " + sciCount + " times.");
 
                 if (dannyThrow == youThrow) {
                     d++;

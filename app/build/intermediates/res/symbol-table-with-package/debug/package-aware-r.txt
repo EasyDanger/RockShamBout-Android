@@ -729,6 +729,7 @@ id notification_main_column_container
 id oppPlayText
 id packed
 id papPlayButt
+id papRec
 id parent
 id parentPanel
 id percent
@@ -740,8 +741,10 @@ id resultText
 id right
 id right_icon
 id right_side
+id rocRec
 id rockPlayButt
 id sciPlayButt
+id sciRec
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -836,6 +839,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ng
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
