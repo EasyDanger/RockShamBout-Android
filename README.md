@@ -1,5 +1,5 @@
 # RockShamBout-Android
-Our first "real" Android app! A port of our lab13RockPaperScissors Java Console app. Play RockPaperScissors from the comfort and convenience of your own Android mobile device!
+Our first "real" Android app! A port of our <a href="https://github.com/EasyDanger/lab13RockPaperScissors">lab13RockPaperScissors</a> Java Console app. Play RockPaperScissors from the comfort and convenience of your own Android mobile device! Tested on a Samsung Galaxy S7.
 
 ### 1.0.0 Features
 -One opponent, named Danny. Danny functions based on a complex algorithm that deduces the best possible move before discarding that information and instead playing randomly.<br>
