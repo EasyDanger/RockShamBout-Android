@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackground"
+    >
+
+    <Button
+        android:id="@+id/papPlayButt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="Paper"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toTopOf="@+id/sciPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockPlayButt"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <Button
+        android:id="@+id/rockPlayButt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="Rock"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sciPlayButt"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="Scissors"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/papPlayButt"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <TextView
+        android:id="@+id/playerPlayText"
+        android:layout_width="181dp"
+        android:layout_height="153dp"
+        android:text="Your play will appear here!"
+        android:textColor="@color/colorText"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toStartOf="@+id/oppPlayText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oppPlayText"
+        android:layout_width="179dp"
+        android:layout_height="153dp"
+        android:text="Your opponent's play will appear here!"
+        android:textColor="@color/colorText"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playerPlayText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="Your results, win or lose, will appear here!"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/rockPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerPlayText" />
+
+    <TextView
+        android:id="@+id/rocRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Rock 0 times."
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/papPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockPlayButt" />
+
+    <TextView
+        android:id="@+id/papRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Paper 0 times."
+        android:textColor="@color/colorText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/sciPlayButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/papPlayButt" />
+
+    <TextView
+        android:id="@+id/sciRec"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:text="You've played Scissors 0 times."
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciPlayButt" />
+
+</android.support.constraint.ConstraintLayout>

@@ -14,11 +14,13 @@ public final class Bart extends Player {
     private static Roshambo fif;
     private static Roshambo six;
     private static Roshambo sev;
-    private Button goBartOpp;
-    private RelativeLayout rl;
 
     @Override
     public Roshambo generateRoshambo(Roshambo userPlay) {
+        return Roshambo.ROCK;
+    }
+
+    public static Roshambo generateRoshambo() {
         return Roshambo.ROCK;
     }
 

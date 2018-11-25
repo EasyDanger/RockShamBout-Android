@@ -17,13 +17,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
-        <activity android:name="co.easydanger.rockshambout.MainActivity" >
+        <activity android:name="co.easydanger.rockshambout.ChooseActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="co.easydanger.rockshambout.DannyActivity" />
+        <activity android:name="co.easydanger.rockshambout.BartActivity" />
+        <activity android:name="co.easydanger.rockshambout.HannahActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

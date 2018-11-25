@@ -10,18 +10,21 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ng"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ng"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="co.easydanger.rockshambout.MainActivity" >
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity android:name="co.easydanger.rockshambout.ChooseActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="co.easydanger.rockshambout.DannyActivity" />
+        <activity android:name="co.easydanger.rockshambout.BartActivity" />
+        <activity android:name="co.easydanger.rockshambout.HannahActivity" />
     </application>
 
 </manifest>

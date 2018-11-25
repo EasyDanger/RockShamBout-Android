@@ -377,6 +377,8 @@ color bright_foreground_material_light
 color button_material_dark
 color button_material_light
 color colorAccent
+color colorAccent1
+color colorAccent2
 color colorDefaultBackground
 color colorPrimary
 color colorPrimaryDark
@@ -668,7 +670,8 @@ id all
 id always
 id async
 id barrier
-id bartOpp
+id bartDesc
+id bartOppButt
 id beginning
 id blocking
 id bottom
@@ -678,6 +681,7 @@ id center_horizontal
 id center_vertical
 id chains
 id checkbox
+id chooselayouttt
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -685,8 +689,8 @@ id collapseActionView
 id contentPanel
 id custom
 id customPanel
-id dannyOpp
-id dannylayouttt
+id dannyDesc
+id dannyOppButt
 id decor_content_parent
 id default_activity_button
 id dimensions
@@ -702,6 +706,8 @@ id fill_vertical
 id forever
 id gone
 id groups
+id hannahDesc
+id hannahOppButt
 id home
 id homeAsUp
 id icon
@@ -711,7 +717,6 @@ id image
 id info
 id invisible
 id italic
-id layouttt
 id left
 id line1
 id line3
@@ -727,6 +732,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id oppPlayText
+id pLayout
 id packed
 id papPlayButt
 id papRec
@@ -825,14 +831,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_main
-layout danny_activity_main
+layout choose_opp
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout play_activity_main
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

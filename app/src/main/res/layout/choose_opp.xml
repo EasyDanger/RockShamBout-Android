@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooselayouttt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefaultBackground"
+    tools:context=".ChooseActivity">
+
+
+    <Button
+        android:id="@+id/bartOppButt"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent2"
+        android:text="Play Bart!"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/dannyDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bartDesc" />
+
+    <Button
+        android:id="@+id/dannyOppButt"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        android:text="Play Danny!"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/hannahDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dannyDesc" />
+
+    <TextView
+        android:id="@+id/bartDesc"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:text="Bart knows what he wants, and he's not gonna waver from it. Play against him if you're the same. (Easy Mode)"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/bartOppButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dannyDesc"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:text="Danny's a wildcard. He may not even know how to play the game. If you can consistently beat him, you're magic. (Hard Mode)"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/dannyOppButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bartOppButt" />
+
+    <Button
+        android:id="@+id/hannahOppButt"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent1"
+        android:text="Play Hannah!"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hannahDesc" />
+
+    <TextView
+        android:id="@+id/hannahDesc"
+        android:layout_width="368dp"
+        android:layout_height="80dp"
+        android:text="Hannah will actively try to beat you. Can you figure out her strategy and turn it around on her? (Fair Mode)"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/hannahOppButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dannyOppButt" />
+</android.support.constraint.ConstraintLayout>
