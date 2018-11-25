@@ -1,12 +1,12 @@
-# RockShambout-Android
+# RockShamBout-Android
 Our first "real" Android app! A port of our lab13RockPaperScissors Java Console app. Play RockPaperScissors from the comfort and convenience of your own Android mobile device!
 
-## 1.0.0 Features
+### 1.0.0 Features
 -One opponent, named Danny. Danny functions based on a complex algorithm that deduces the best possible move before discarding that information and instead playing randomly.<br>
 -Score counter. Keeps track of wins, losses, and draws.<br>
 -Exciting RockPaperScissors gameplay!
 
-## Planned Features
+### Planned Features
 -Additional Opponents, Bart (Easy Mode) and Hannah (Fair Mode). <br>
   -Navivation pane.<br>
 -Play tracker, to keep track of how many of each play you the player tends to use.<br>
