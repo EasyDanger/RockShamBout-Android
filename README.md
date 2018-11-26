@@ -14,6 +14,10 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 -Add combined lists of play record.<br>
 -Code cleanup.<br>
 
+##### [2.0.1] - 11/26/2018<br>
+-Fixed display bug where records would reset on opponent play screens until play was made.
+-General copy-editing
+
 ##### [2.0.0] - 11/25/2018<br>
 -Hannah and Bart implemented.<br>
 -Fixed bug of 'record' text going off screen.

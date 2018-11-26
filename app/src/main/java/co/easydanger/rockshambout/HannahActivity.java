@@ -42,6 +42,7 @@ public class HannahActivity extends AppCompatActivity {
         playerPlay = findViewById(R.id.playerPlayText);
         oppPlay = findViewById(R.id.oppPlayText);
         oppPlay.setText(opp + "'s play will appear here!");
+
         result = findViewById(R.id.resultText);
         rocRecText = findViewById(R.id.rocRec);
         papRecText = findViewById(R.id.papRec);
@@ -50,6 +51,10 @@ public class HannahActivity extends AppCompatActivity {
         playRock.setBackgroundColor(getResources().getColor(R.color.colorAccent1));
         playPaper.setBackgroundColor(getResources().getColor(R.color.colorAccent1));
         playSci.setBackgroundColor(getResources().getColor(R.color.colorAccent1));
+        result.setText("Record vs. " + opp + " so far ... \n Wins: " + w + ". Losses: " + l + ". Draws: " + d);
+        rocRecText.setText("You've played Rock " + rockCount + " times against " + opp + ".");
+        sciRecText.setText("You've played Scissors " + sciCount + " times against " + opp + ".");
+        papRecText.setText("You've played Paper " + papCount + " times against " + opp + ".");
 
         View.OnClickListener listenRock = new View.OnClickListener() {
             Roshambo oppThrow;
@@ -61,7 +66,7 @@ public class HannahActivity extends AppCompatActivity {
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText(opp + " played " + oppThrow + ".");
                 rockCount++;
-                rocRecText.setText("You've played " + youThrow + " " + rockCount + " times.");
+                rocRecText.setText("You've played " + youThrow + " " + rockCount + " times against " + opp + ".");
 
                 if (oppThrow == youThrow) {
                     d++;
@@ -90,7 +95,7 @@ public class HannahActivity extends AppCompatActivity {
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText(opp + " played " + oppThrow + ".");
                 papCount++;
-                papRecText.setText("You've played " + youThrow + " " + papCount + " times.");
+                papRecText.setText("You've played " + youThrow + " " + papCount + " times against " + opp + ".");
 
                 if (oppThrow == youThrow) {
                     d++;
@@ -118,7 +123,7 @@ public class HannahActivity extends AppCompatActivity {
                 playerPlay.setText("You played " + youThrow + ".");
                 oppPlay.setText(opp + " played " + oppThrow + ".");
                 sciCount++;
-                sciRecText.setText("You've played " + youThrow + " " + sciCount + " times.");
+                sciRecText.setText("You've played " + youThrow + " " + sciCount + " times against " + opp + ".");
 
                 if (oppThrow == youThrow) {
                     d++;
