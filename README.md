@@ -16,12 +16,12 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 
 ##### [2.0.1] - 11/26/2018<br>
 -Fixed display bug where records would reset on opponent play screens until play was made.<br>
--General copy-editing
+-General copy-editing<br>
 
 ##### [2.0.0] - 11/25/2018<br>
 -Hannah and Bart implemented.<br>
 -Fixed bug of 'record' text going off screen.<br>
--Added opponent's name to page before play, so it's visible without having to play a round.
+-Added opponent's name to page before play, so it's visible without having to play a round.<br>
 
 ##### [1.1.0] - 11/25/2018
 -Play counter implemented.<br>
