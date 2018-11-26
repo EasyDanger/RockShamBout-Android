@@ -15,7 +15,7 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 -Code cleanup.<br>
 
 ##### [2.0.1] - 11/26/2018<br>
--Fixed display bug where records would reset on opponent play screens until play was made.
+-Fixed display bug where records would reset on opponent play screens until play was made.<br>
 -General copy-editing
 
 ##### [2.0.0] - 11/25/2018<br>
