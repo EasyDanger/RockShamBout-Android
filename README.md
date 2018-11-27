@@ -6,13 +6,16 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 -Score counter. Keeps track of wins, losses, and draws.<br>
 -Exciting RockPaperScissors gameplay!<br>
 -Play tracker, to keep track of how many of each play the player tends to use.<br>
+-Clear play trackers/score counters with long press.<br>
 
 ### Planned Features
--Navigation drawer.<br>
 -Cosmetic updates.<br>
--Allow resetting of score/play tracker. <br>
 -Add combined lists of play record.<br>
 -Code cleanup.<br>
+-Instructions page<br>
+
+##### [2.1.1] - 11/27/2018<br>
+-Added thank you message.
 
 ##### [2.1.0] - 11/27/2018<br>
 -Added navigation menu<br>
