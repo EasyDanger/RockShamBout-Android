@@ -1,13 +1,17 @@
 package co.easydanger.rockshambout;
 
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class DannyActivity extends AppCompatActivity {
+public class DannyActivity extends ChooseActivity {
 
     private TextView playerPlay;
     private TextView oppPlay;
@@ -29,12 +33,36 @@ public class DannyActivity extends AppCompatActivity {
     private String opp = "Danny";
 
 
+    private TextView bart;
+    private TextView danny;
+    private TextView hannah;
+    private Button bartOpp;
+    private Button dannyOpp;
+    private Button hannahOpp;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.play_activity_main);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        cl = findViewById(R.id.chooselayouttt);
 
-        cl = findViewById(R.id.pLayout);
+
+        bartOpp = findViewById(R.id.bartOppButt);
+        dannyOpp = findViewById(R.id.dannyOppButt);
+        hannahOpp = findViewById(R.id.hannahOppButt);
+        bart = findViewById(R.id.bartDesc);
+        danny = findViewById(R.id.dannyDesc);
+        hannah = findViewById(R.id.hannahDesc);
+
+        bartOpp.setVisibility(View.GONE);
+        dannyOpp.setVisibility(View.GONE);
+        hannahOpp.setVisibility(View.GONE);
+        bart.setVisibility(View.GONE);
+        danny.setVisibility(View.GONE);
+        hannah.setVisibility(View.GONE);
 
         playRock = findViewById(R.id.rockPlayButt);
         playPaper = findViewById(R.id.papPlayButt);
@@ -51,6 +79,16 @@ public class DannyActivity extends AppCompatActivity {
         rocRecText.setText("You've played Rock " + rockCount + " times against " + opp + ".");
         sciRecText.setText("You've played Scissors " + sciCount + " times against " + opp + ".");
         papRecText.setText("You've played Paper " + papCount + " times against " + opp + ".");
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView =  findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
 
         View.OnClickListener listenRock = new View.OnClickListener() {
@@ -81,6 +119,16 @@ public class DannyActivity extends AppCompatActivity {
         };
         playRock.setOnClickListener(listenRock);
 
+        View.OnLongClickListener longRock = new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                rockCount = 0;
+                rocRecText.setText("You've reset the count of Rock plays!");
+                return true;
+            }
+        };
+        playRock.setOnLongClickListener(longRock);
+
 
         View.OnClickListener listenPaper = new View.OnClickListener() {
             Roshambo oppThrow;
@@ -110,6 +158,16 @@ public class DannyActivity extends AppCompatActivity {
         };
         playPaper.setOnClickListener(listenPaper);
 
+        View.OnLongClickListener longPap = new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                papCount = 0;
+                papRecText.setText("You've reset the count of Paper plays!");
+                return true;
+            }
+        };
+        playPaper.setOnLongClickListener(longPap);
+
         View.OnClickListener listenSci = new View.OnClickListener() {
             Roshambo oppThrow;
             Roshambo youThrow = Roshambo.SCISSORS;
@@ -137,5 +195,27 @@ public class DannyActivity extends AppCompatActivity {
             }
         };
         playSci.setOnClickListener(listenSci);
+
+        View.OnLongClickListener longSci = new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                sciCount = 0;
+                sciRecText.setText("You've reset the count of Scissors plays!");
+                return true;
+            }
+        };
+        playSci.setOnLongClickListener(longSci);
+
+        View.OnLongClickListener longResult = new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                w = 0;
+                l = 0;
+                d = 0;
+                result.setText("You've reset the results for " + opp + "!");
+                return true;
+            }
+        };
+        result.setOnLongClickListener(longResult);
     }
 }

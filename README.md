@@ -14,6 +14,11 @@ Our first "real" Android app! A port of our <a href="https://github.com/EasyDang
 -Add combined lists of play record.<br>
 -Code cleanup.<br>
 
+##### [2.1.0] - 11/27/2018<br>
+-Added navigation menu<br>
+-Added clear records on longclick<br>
+-Converted to single activity. May be more of a lateral move.<br>
+
 ##### [2.0.1] - 11/26/2018<br>
 -Fixed display bug where records would reset on opponent play screens until play was made.<br>
 -General copy-editing<br>
